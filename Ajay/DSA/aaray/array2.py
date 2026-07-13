@@ -5,10 +5,10 @@ print(f"\nArray: \n{val}\n") # printing the array
 
 
 for i in range (0, 6):
-    print(val[i], end=" ")
+    print(f"{val[i]}", end=" ")
 
-print(f"This is for loop an array:\n")
+print("\n")
 
 for x in val: # this is called enhanced for loop,
     #  it is used to iterate over the elements of an array
-    print(x, end=", ")
+    print(f"{x}", end=", ")

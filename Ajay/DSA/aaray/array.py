@@ -11,16 +11,7 @@ print("\n")
 
 for array in array1: # this is called enhanced for loop, 
     # it is used to iterate over the elements of an array
-    print(f"{array}", end=" ")
+    print(f"{array}", end=", ")
 
 
-val = array.array("I", [1, 2, 3, 4, 5, 6])
-print(val)
 
-for i in range(0, 6):
-    print(val[i], end=" ")
-
-print("\n")
-
-for x in val:
-    print(f"{x}", end=" ")
