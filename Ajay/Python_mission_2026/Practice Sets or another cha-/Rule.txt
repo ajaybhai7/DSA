@@ -1,0 +1,4 @@
+# Logical operator
+'''And = Both A and B condition should be True, 
+If One statement is false The Second Will be False'''
+
