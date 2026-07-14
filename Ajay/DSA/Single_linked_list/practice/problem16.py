@@ -18,7 +18,8 @@ while True:
             elif user_choose == 2:
                 
                 for task in tasks:
-                    if tasks == " ": 
+
+                    if tasks == "": 
                         print("To do list is empty Now!")
 
                     else:
@@ -32,6 +33,7 @@ while True:
                     print(f"Successfully remove {remove_task} task in to do list")
                 else:
                     print("Task not exist in to do list")
+
             else:
                 break
 
