@@ -2,7 +2,7 @@
 
 def repeat_word(word, repete):
 
-    final = word*repete
+    final = str(word)*repete
     return final
 
 word = input("Enter a Word: ")
