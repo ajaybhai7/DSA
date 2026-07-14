@@ -13,7 +13,7 @@ while True:
             user_choose = int(input("Taks -> ").lower())
 
             if user_choose == 1:
-                to_do = tasks.append(input("Enter Task to add: "))
+                to_do = (input("Enter Task to add: "))
                 with open("To_do_list.txt", 'w')as f:
                      f.write(to_do)
 
@@ -43,7 +43,7 @@ while True:
                 
                 else:
                     remove_task = input("Enter to remove task: ")
-                    with open ("To_do_list.txt", 'a') as a:
+                    with open ("To_do_list.txt", 'w') as a:
                          append = a.write(remove_task)
                     
                     with open("To_do_list.txt", 'r') as x:
