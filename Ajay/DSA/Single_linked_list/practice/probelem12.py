@@ -1,11 +1,10 @@
 # Write a function to repete a word 
 
-def repeat_word(word, repete):
+def repeat_word(word):
 
-    word = word
-    repete = repete
 
-    return word*repeat
+    for i in range(len(repeat)):
+        return word
     
 
 word = input("Enter a Word: ")
