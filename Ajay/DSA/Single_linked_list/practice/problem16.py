@@ -18,7 +18,7 @@ while True:
             elif user_choose == 2:
 
                     if len(tasks) == 0: 
-                        print("To do list is empty Now!")
+                        print("To do list khali hai !")
 
                     else:
                         for task in tasks:
@@ -26,7 +26,7 @@ while True:
 
             elif user_choose == 3:
                 if len(tasks) == 0:
-                     print("No Such a task to remove!")
+                     print("To do list Khali hai !")
                 
                 
                 else:
