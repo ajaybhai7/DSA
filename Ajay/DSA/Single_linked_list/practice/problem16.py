@@ -27,7 +27,7 @@ while True:
 
                         else:
                             for task in to_do_print:
-                                print(f"Your tasks are\n{to_do_print}")
+                                print(f"Your tasks are\n{file}")
 
             elif user_choose == 3:
 
