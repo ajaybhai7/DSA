@@ -21,13 +21,11 @@ while True:
                     
                     with open("To_do_list.txt") as f:
                         file = f.read()
-                        to_do_print = f.readlines()
                         if file == "": 
                             print("To do list khali hai !")
 
                         else:
-                            for task in  len(to_do_print):
-                                print(f"Your tasks are\n{to_do_print}")
+                            print(f"Your tasks are\n{file}")
 
             elif user_choose == 3:
 
