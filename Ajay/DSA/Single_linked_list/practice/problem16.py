@@ -21,7 +21,7 @@ while True:
                     
                     with open("To_do_list.txt") as f:
                         file = f.read()
-                        to_do_print = file.readlines()
+                        to_do_print = f.readlines()
                         if file == "": 
                             print("To do list khali hai !")
 
