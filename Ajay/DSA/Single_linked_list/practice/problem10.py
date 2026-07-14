@@ -5,7 +5,7 @@ def calculate_discount(rupay):
     if rupay > 1000:
         naya_price = rupay - (rupay * 10 / 100)
     
-    elif rupay <= 1000:
+    else:
         naya_price = rupay
 
     return naya_price
