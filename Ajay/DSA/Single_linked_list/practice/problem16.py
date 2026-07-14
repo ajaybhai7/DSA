@@ -22,13 +22,11 @@ while True:
                     with open("To_do_list.txt", 'r') as r:
                          read = r.read()
 
-                    if read == "0": 
+                    if read == "": 
                         print("To do list khali hai !")
 
                     else:
-                        with open("To_do_list.txt", 'r') as p:
-                             to_do_print = p.read()
-                             to_do_print = p.readlines()
+                        to_do_print = r.readlines()
                         for task in to_do_print:
                             print(f"Your tasks are\n{to_do_print}")
 
