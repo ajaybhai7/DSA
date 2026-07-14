@@ -11,4 +11,4 @@ def calculate_discount(rupay):
     return naya_price
 paise = int(input("Enter Amount: "))
 discount = calculate_discount(paise)
-print(f"Your Total Amount is : {discount}\nYou got discount of {discount} - {paise} = {discount-paise}")
+print(f"Your Total Amount is : {discount}\nYou got discount : {paise} - {discount} = {paise-discount}")
