@@ -25,7 +25,7 @@ while True:
                             print(f"Your tasks are\n{tasks}")
 
             elif user_choose == 3:
-                if len(task) == 0:
+                if len(tasks) == 0:
                      print("No Such a task to remove!")
                 
                 
