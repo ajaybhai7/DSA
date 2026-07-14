@@ -38,15 +38,14 @@ while True:
                 
                 else:
                     remove_task = input("Enter to remove task: ")
-                    with open ("To_do_list.txt", 'w') as a:
-                         remove = a.write(remove_task)
                     
                     with open("To_do_list.txt", 'r') as x:
-                         to_do_remove = x.readline()
+                         to_do_remove = x.readlines()
                          for task in to_do_remove:
-                            remove = task.strip(remove_task)
-                            print(f"Successfully remove {remove_task} task in to do list")
-                
+                            with open("To_do_list.txt", 'w') as rm:
+                                rm.write(to_do_remove)     
+                                print(f"Successfully remove {remove_task} task in to do list")
+                    
                          else:
                             print("Remove task list me nahi mila")
 
