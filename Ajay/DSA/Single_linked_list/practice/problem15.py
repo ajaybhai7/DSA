@@ -5,9 +5,8 @@ from random import randint
 secret_number = randint(1, 10)
 
 
-while user_guess != secret_number:
+while True:
     user_guess = int(input("Guess a Number"))
-
 
     if user_guess < secret_number:
         print("Lower Number")
