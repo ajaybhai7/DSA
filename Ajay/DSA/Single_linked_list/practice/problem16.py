@@ -27,23 +27,27 @@ while True:
                         else:
                             print(f"Your tasks are\n{file}")
 
-            # Option 3 (Delete) bas itna chota ho jayega:
             elif user_choose == 3:
-                if len(tasks) == 0:
-                    print("To do list khali hai!")
+
+                with open ("To_do_list.txt") as l:
+                     to_do_read_blank = l.read()
+
+                if  to_do_read_blank == "":
+                     print("To do list Khali hai !")
+                
+                
                 else:
                     remove_task = input("Enter to remove task: ")
-                    if remove_task in tasks:
-                        tasks.remove(remove_task) # Sidha list se hataya (1 line)
-                        
-                        # Ab nayi list ko file mein daal do (Overwrite)
-                        with open("To_do_list.txt", 'w') as f:
-                            for t in tasks:
-                                f.write(t + "\n")
-                                
-                        print(f"Successfully removed {remove_task}")
-                    else:
-                        print("Task nahi mila")
+                    
+                    with open("To_do_list.txt", 'r') as x:
+                         to_do_remove = x.readlines()
+                         for task in to_do_remove:
+                            with open("To_do_list.txt", 'w') as rm:
+                                rm.write(to_do_remove)     
+                                print(f"Successfully remove {remove_task} task in to do list")
+                    
+                         else:
+                            print("Remove task list me nahi mila")
 
             else:
                 break
