@@ -12,14 +12,14 @@ while True:
     
     user_choose = input("Taks -> ").lower()
 
-    if user_choose == "Add task" and 1:
+    if user_choose == 1:
         tasks.append(input("Enter Task to add: "))
 
-    elif user_choose == "view task" and 2:
+    elif user_choose == 2:
         for task in tasks():
             print(tasks)
 
-    elif user_choose == "Delete task" and 3:
+    elif user_choose == 3:
         tasks.remove()
 
     else:
