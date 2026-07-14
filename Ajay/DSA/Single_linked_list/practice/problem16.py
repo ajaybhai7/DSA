@@ -29,14 +29,14 @@ while True:
                      print("No Such a task to remove!")
                 
                 
-                elif (remove_task) in tasks:
-                    remove_task = input("Enter to remove task: ")
-
-                    tasks.remove(remove_task)
-                    print(f"Successfully remove {remove_task} task in to do list")
-                
                 else:
-                    print("Task not exist in to do list")
+                    remove_task = input("Enter to remove task: ")
+                    if (remove_task) in tasks:
+                        tasks.remove(remove_task)
+                        print(f"Successfully remove {remove_task} task in to do list")
+                
+                    else:
+                        print("Remove task list me nahi mila")
 
             else:
                 break
