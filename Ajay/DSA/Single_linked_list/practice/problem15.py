@@ -4,7 +4,7 @@ from random import randint
 
 secret_number = randint(1, 10)
 
-total_guess = 0
+total_guess = 1
 
 while True:
     user_guess = int(input("Guess a Number: "))
