@@ -10,10 +10,10 @@ while True:
 
     if user_guess < secret_number:
         print("Lower Number")
-        break
+        
     elif user_guess > secret_number:
         print("Higer Number")
-        break
+
     if user_guess == secret_number:
         print("You guess the number")
         break
