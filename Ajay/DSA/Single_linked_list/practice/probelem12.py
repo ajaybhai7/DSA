@@ -8,7 +8,7 @@ def repeat_word(word, repeat):
     
 
 word = input("Enter a Word: ")
-repeat = input("How times to repeat: ")
+repeat = int(input("How times to repeat: "))
 
 dohrana = repeat_word(word, repeat)
 
