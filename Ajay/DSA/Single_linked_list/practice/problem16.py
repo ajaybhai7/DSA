@@ -42,9 +42,9 @@ while True:
                          remove = a.write(remove_task)
                     
                     with open("To_do_list.txt", 'r') as x:
-                         to_do_remove = x.read()
-                         if (remove_task) in to_do_remove:
-                            tasks.remove(remove_task)
+                         to_do_remove = x.readline()
+                         for task in to_do_remove:
+                            remove = task.strip(remove_task)
                             print(f"Successfully remove {remove_task} task in to do list")
                 
                          else:
@@ -56,12 +56,3 @@ while True:
         except ValueError:
              print("Enter Corect argument or Value")  
 print("Thanks for using") 
-    
-# with open("To_do_list.txt") as f:
-#     file = f.read()
-
-#     if file == "":
-#         print("File is empty")
-    
-#     else:
-#         print(file)
