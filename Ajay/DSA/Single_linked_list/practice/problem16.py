@@ -17,10 +17,11 @@ while True:
 
     elif user_choose == 2:
         for task in tasks:
-            print(tasks)
+            print(f"Your tasks are\n{tasks}")
 
     elif user_choose == 3:
         tasks.remove(input("Enter to remove task: "))
+        print(f"Successfully remove task in to do list")
 
     else:
         break
