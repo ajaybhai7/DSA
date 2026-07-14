@@ -29,7 +29,7 @@ while True:
                      print("No Such a task to remove!")
                 
                 
-                elif remove_task in tasks:
+                elif (remove_task) in tasks:
                     remove_task = input("Enter to remove task: ")
 
                     tasks.remove(remove_task)
