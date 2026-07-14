@@ -19,7 +19,7 @@ while True:
 
             elif user_choose == 2:
                     
-                    with open("To_do_list.txt", 'f') as f:
+                    with open("To_do_list.txt") as f:
                         file = f.read()
                         to_do_print = file.readlines()
                         if file == "": 
@@ -31,7 +31,7 @@ while True:
 
             elif user_choose == 3:
 
-                with open ("To_do_list.txt", 'r') as l:
+                with open ("To_do_list.txt") as l:
                      to_do_read_blank = l.read()
 
                 if  to_do_read_blank == "":
