@@ -19,7 +19,7 @@ while True:
                 
                 for task in tasks:
 
-                    if tasks == "": 
+                    if len(tasks) == 0: 
                         print("To do list is empty Now!")
 
                     else:
