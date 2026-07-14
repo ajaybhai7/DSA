@@ -22,7 +22,7 @@ while True:
                     with open("To_do_list.txt", 'r') as file:
                          
 
-                        if len(file.read() == " "): 
+                        if file.read() == " ": 
                             print("To do list khali hai !")
 
                         else:
