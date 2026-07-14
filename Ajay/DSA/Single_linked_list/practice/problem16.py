@@ -20,8 +20,9 @@ while True:
             print(f"Your tasks are\n{tasks}")
 
     elif user_choose == 3:
-        tasks.remove(input("Enter to remove task: "))
-        print(f"Successfully remove task in to do list")
+        remove_task = input("Enter to remove task: ")
+        tasks.remove(remove_task)
+        print(f"Successfully remove {remove_task} task in to do list")
 
     else:
         break
