@@ -2,9 +2,11 @@
 
 def repeat_word(word, repeat):
 
-
+    result = ""
     for i in range(repeat):
-        return word*repeat
+        result = result + word
+    
+    return result
     
 
 word = input("Enter a Word: ")
