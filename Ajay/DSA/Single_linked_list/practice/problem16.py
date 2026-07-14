@@ -16,9 +16,13 @@ while True:
                 tasks.append(input("Enter Task to add: "))
 
             elif user_choose == 2:
+                
                 for task in tasks:
-                    print(f"Your tasks are\n{tasks}")
+                    if task in tasks: 
+                        print(f"Your tasks are\n{tasks}")
 
+                    else:
+                         print("To do list is empty Now!")
             elif user_choose == 3:
                 remove_task = input("Enter to remove task: ")
                 tasks.remove(remove_task)
