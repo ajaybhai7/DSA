@@ -20,15 +20,15 @@ while True:
             elif user_choose == 2:
                     
                     with open("To_do_list.txt", 'r') as file:
-                         read = file.read()
+                         
 
-                    if read == "": 
-                        print("To do list khali hai !")
+                        if file.read() == "": 
+                            print("To do list khali hai !")
 
-                    else:
-                        to_do_print = file.readlines()
-                        for task in to_do_print:
-                            print(f"Your tasks are\n{to_do_print}")
+                        else:
+                            to_do_print = file.readlines()
+                            for task in to_do_print:
+                                print(f"Your tasks are\n{to_do_print}")
 
             elif user_choose == 3:
 
