@@ -15,7 +15,7 @@ while True:
             if user_choose == 1:
                 to_do = (input("Enter Task to add: "))
                 with open("To_do_list.txt", 'a')as f:
-                     f.write(to_do)
+                     f.write(f"{to_do}\n")
 
             elif user_choose == 2:
                     
