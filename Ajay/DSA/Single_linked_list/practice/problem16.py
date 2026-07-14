@@ -20,7 +20,7 @@ while True:
             print(tasks)
 
     elif user_choose == 3:
-        tasks.remove(tasks)
+        tasks.remove(input("Enter to remove task: "))
 
     else:
         break
