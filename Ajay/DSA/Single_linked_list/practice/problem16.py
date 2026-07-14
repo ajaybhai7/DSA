@@ -13,7 +13,7 @@ while True:
     user_choose = input("Taks -> ").lower()
 
     if user_choose == "Add task" or 1:
-        tasks.append()
+        tasks.append(input("Enter Task to add: "))
 
     elif user_choose == "view task" or 2:
         for task in tasks():
