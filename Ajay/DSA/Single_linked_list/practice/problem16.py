@@ -26,9 +26,9 @@ while True:
 
             else:
                 break
-            print("Thanks for using") 
 
         except ValueError:
              print("Enter Corect argument or Value")  
+print("Thanks for using") 
         
     
