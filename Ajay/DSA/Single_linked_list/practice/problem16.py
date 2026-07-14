@@ -39,16 +39,16 @@ while True:
                 else:
                     remove_task = input("Enter to remove task: ")
                     with open ("To_do_list.txt", 'w') as a:
-                         append = a.write(remove_task)
+                         remove = a.write(remove_task)
                     
                     with open("To_do_list.txt", 'r') as x:
                          to_do_remove = x.read()
-                    if (remove_task) in to_do_remove:
-                        tasks.remove(remove_task)
-                        print(f"Successfully remove {remove_task} task in to do list")
+                         if (remove_task) in to_do_remove:
+                            tasks.remove(remove_task)
+                            print(f"Successfully remove {remove_task} task in to do list")
                 
-                    else:
-                        print("Remove task list me nahi mila")
+                         else:
+                            print("Remove task list me nahi mila")
 
             else:
                 break
