@@ -24,3 +24,5 @@ print(f"List1 -> Max: {bada}, Min: {chota}")
 
 bada1, chota1 = max_min(list2)
 print(f"List2 -> Max: {bada1}, Min: {chota1}") #printin Output 
+
+
