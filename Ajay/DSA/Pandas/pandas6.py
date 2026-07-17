@@ -12,3 +12,8 @@ city_age = df.groupby("City")["Age"].mean()
 print(city_age)
 
 df.to_csv("Pandas_Data.csv", index = False)
+
+read = pd.read_csv("Pandas_Data.csv")
+
+print(read)
+

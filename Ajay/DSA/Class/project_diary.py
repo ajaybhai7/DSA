@@ -2,29 +2,31 @@ from datetime import datetime
 def add(txt):
     Diary = "Diary.txt"
     with open(Diary, 'a') as f:
-        aaj_ki_date = datetime.now().strftime("%Y-%m-%d- %H:%M")
-        f.write(f"[{aaj_ki_date}] {txt}\n")
-def view():
+        aaj_ki_date = datetime.now().strftime("%Y-%m-%d- %H:%M") # Date Aur time ke liye 
+        f.write(f"[{aaj_ki_date}] {txt}\n") #Fir Write kar denge Diary me Date aur jo input text milega vo
+
+def view(): # Defiining View Function to view Diary
     diary = "Diary.txt"
     try:
-        with open(diary, 'r') as f:
-            read = f.readlines()
+        with open(diary, 'r') as f: # openning as reading mode
+            read = f.readlines() # Reading all line using f.readlines()
             # Agar file khali hai
-            if len(read) == 0:
-                print("Diary bilkul khali hai!")
-            else:
-                for txt in read:
+            if len(read) == 0: # Agar lines ki lenth 0 hai to 
+                print("Diary bilkul khali hai!") # Print kar do Ye
+            
+            else: # nahi to agar
+                for txt in read: # txt in lines me hai  unhe 
                     # strip() lagane se extra space nahi aata
-                    print(txt.strip()) 
-    except FileNotFoundError:
-        print("Abhi tak koi diary nahi bani hai.")
+                    print(txt.strip()) # Print kardo 
+    except FileNotFoundError: # Agar file bani hi nahi to 
+        print("Abhi tak koi diary nahi bani hai.") # print kar do ye 
 
-def delete(line_to_delete):
+def delete(line_to_delete): # Delete Function to delete line Lines me Word Dhundega aur Delete kar dega 
     Diary = "Diary.txt"
 
     try:
-        with open(Diary, 'r') as f:
-            lines = f.readlines()
+        with open(Diary, 'r') as f: # Open with read mode
+            lines = f.readlines() # Lines ko lines me store kar liya 
 
         with open(Diary, 'w') as f:
             deleted = False
